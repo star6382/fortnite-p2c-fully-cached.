@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="cheat">
+      <UniqueIdentifier>{b31ca04b-1466-42f1-a217-8c2abdfbe87b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\impl">
+      <UniqueIdentifier>{47c4cb7c-65f2-4d6c-ba09-416f8fd79f36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\impl\core">
+      <UniqueIdentifier>{b7066af0-c139-438d-8cfa-66b3491616ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\impl\core\hooker">
+      <UniqueIdentifier>{e7947523-c8f7-43a9-b870-aea5d16e0a83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\impl\sdk">
+      <UniqueIdentifier>{6d2dc465-48c2-4924-80b0-d7f4e94cb741}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\impl\sdk\sdk structs">
+      <UniqueIdentifier>{907b35fd-e94c-4af7-a8d7-1c7789d334ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\impl\sdk\engine">
+      <UniqueIdentifier>{1432bea5-d432-4ca2-a85e-3a8b2338a977}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\impl\core\no winapi">
+      <UniqueIdentifier>{7738c388-b549-4a86-9882-c89e0ab2b3dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\impl\core\no winapi\library">
+      <UniqueIdentifier>{4596e221-4e9a-4371-a706-94f52ff63a2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\impl\sdk\sdk structs\library">
+      <UniqueIdentifier>{4c892aab-5979-408d-94aa-ca98a6851aea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\impl\sdk\sdk structs\library\math">
+      <UniqueIdentifier>{61e2a59c-2415-4d95-a194-6b160ec9d7b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\render">
+      <UniqueIdentifier>{737a6cb3-8335-43fb-a2ae-a2f8a163a4f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\render\gui">
+      <UniqueIdentifier>{7e82328d-b659-476d-a84d-d796cb2718ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\render\gui\gui framework">
+      <UniqueIdentifier>{d677891a-801b-4849-adad-fe4082ac0a9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\render\gui\gui framework\config">
+      <UniqueIdentifier>{74aa2df7-99ac-4db7-ab96-dacc3e197c1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\render\features">
+      <UniqueIdentifier>{7b4396b4-fa8e-48c7-bbbb-0079a722966c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\render\features\panel">
+      <UniqueIdentifier>{a7f0333b-03df-43bd-8e18-e71f66137b97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\render\features\aimbot">
+      <UniqueIdentifier>{82e1ec7e-3fc5-4809-8952-2a854a8bb7f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\render\features\visuals">
+      <UniqueIdentifier>{eb111e00-a0b2-4562-8f20-bf72e4f4e23c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\render\features\panel\spectate">
+      <UniqueIdentifier>{a56b4445-4210-430d-b49e-7a55262a36cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\render\features\panel\spectate\preview">
+      <UniqueIdentifier>{5a4ae038-864c-4e58-ad0e-5bac9eec1cea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\render\features\aimbot\silent">
+      <UniqueIdentifier>{2eddcdc1-0dee-4b9b-99b2-77ecae93b615}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\render\features\visuals\world">
+      <UniqueIdentifier>{4c0ea1a2-c5cf-41ff-9cbc-85cabc81fcd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\render\drawing">
+      <UniqueIdentifier>{1de43532-8e6a-4293-a652-92633f0580b5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.hpp">
+      <Filter>cheat\render\gui\gui framework</Filter>
+    </ClInclude>
+    <ClInclude Include="settings.h">
+      <Filter>cheat\render\gui\gui framework\config</Filter>
+    </ClInclude>
+    <ClInclude Include="features.hpp">
+      <Filter>cheat\render\features</Filter>
+    </ClInclude>
+    <ClInclude Include="fort_pickup.hpp">
+      <Filter>cheat\render\features\visuals\world</Filter>
+    </ClInclude>
+    <ClInclude Include="fort_athena_vehicle.hpp">
+      <Filter>cheat\render\features\visuals\world</Filter>
+    </ClInclude>
+    <ClInclude Include="fort_athena_animals.hpp">
+      <Filter>cheat\render\features\visuals\world</Filter>
+    </ClInclude>
+    <ClInclude Include="fort_athena_containers.hpp">
+      <Filter>cheat\render\features\visuals\world</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\cache.hpp">
+      <Filter>cheat\render</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Render\menu.hpp">
+      <Filter>cheat\render\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\impl.hpp">
+      <Filter>cheat\render</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Hooks\hook.hpp">
+      <Filter>cheat\impl\core\hooker</Filter>
+    </ClInclude>
+    <ClInclude Include="Custom\lazy_importer.hpp">
+      <Filter>cheat\impl\core\no winapi\library</Filter>
+    </ClInclude>
+    <ClInclude Include="Custom\Windows\library_definitions.hpp">
+      <Filter>cheat\impl\core\no winapi\library</Filter>
+    </ClInclude>
+    <ClInclude Include="Custom\Windows\win_api.hpp">
+      <Filter>cheat\impl\core\no winapi</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Sdk\Engine\unreal_structs.hpp">
+      <Filter>cheat\impl\sdk\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Sdk\math.hpp">
+      <Filter>cheat\impl\sdk\sdk structs\library\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Sdk\sdk_structure.hpp">
+      <Filter>cheat\impl\sdk\sdk structs</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Sdk\sdk.hpp">
+      <Filter>cheat\impl\sdk\sdk structs</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Sdk\Engine\engine_canvas.hpp">
+      <Filter>cheat\render\drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Hooks\get_player_view_point.hpp">
+      <Filter>cheat\render\features\aimbot\silent</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Actors\Features\target.hpp">
+      <Filter>cheat\render\features\aimbot</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Actors\Features\preview.hpp">
+      <Filter>cheat\render\features\panel\spectate\preview</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Actors\Features\spectate_panel.hpp">
+      <Filter>cheat\render\features\panel\spectate</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,5 @@
+#include <cstdint>
+
+void hook() {
+
+}
